@@ -178,7 +178,7 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     normalize-rails (3.0.3)
     orm_adapter (0.5.0)
-    paperclip (4.2.4)
+    paperclip (5.2.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       cocaine (~> 0.5.5)
@@ -287,7 +287,7 @@ GEM
       json (~> 1.7)
       kaminari (~> 0.15, >= 0.15.1)
       monetize (~> 1.1)
-      paperclip (~> 4.2.0)
+      paperclip (~> 5.2.0)
       paranoia (~> 2.1.0)
       premailer-rails
       rails (~> 4.2.2)
