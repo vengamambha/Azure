@@ -19,6 +19,6 @@ steps:
            targetType: 'inline'
            script: |
                 export SRCCLR_SCM_URI=https://github.com/vengamambha/Azure
-                export SRCCLR_API_TOKEN="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAyMjE5LCJleHAiOjE3MDI2NDkwNDgsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiJmYzljNzlmYy1kZGMwLTRhZDgtYWZjMi1mZDY4MTMwYjg1OGQiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.pbKqAxCP_DiwZWfkV5NGRxJF85U7Wug4dr-p20_RkUsUQwuJT0TexotgW_pBvZcL8qmmU3f3Mgvgb9cVQamnRGqcyvq5AfBEniheyHChG1edl8iS1noSp-k4JCZcMz8UM5VPCif4-dfFzpuDMAEIHqDsp_-tWp9W38YpGwccQ2Y"
+                export SRCCLR_API_TOKEN="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAyMjIwLCJleHAiOjE3MDI2NTA4NjcsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiJjZmIxOTg1ZC0zMjQyLTQ0ZTUtYjE1My1kMWYxN2ExNDliODIiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.gGACpezCRarimllRrBIgQd1sh4hNYd4_NvXC2Zndgv_Tj3nfZVNht_8mb0BYjX6ft9F4gbHWgVw-Wv6BARUnHlCNol8FnoVT1JxvPgFbZS0lsbog01Kky4mQxOmbA5B1xPI2-rfjtMYEsCZc9qEB3R_Sam0DF-G8KcSrLHwxe-Q"
                 export SRCCLR_SCM_REF=master
                 curl -sSL https://download.sourceclear.com/ci.sh | bash -s -- scan --update-advisor
