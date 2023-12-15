@@ -16,10 +16,10 @@ steps:
      targetType: 'inline'
      script: |
           export SRCCLR_SCM_URI=https://github.com/ashynavad-git/SCA.git
-          export SRCCLR_API_TOKEN="$(SRCCLR_API_TOKEN)"
+          export SRCCLR_API_TOKEN="da49d6c8-65e9-4928-80a4-c89c5f2c085c"
           export SRCCLR_SCM_REF=master
-          export SRCCLR_SCM_REV="$(build.buildNumber)"
+          export SRCCLR_SCM_REV="Amit"
           curl -sSL https://download.sourceclear.com/ci.sh | bash -s -- scan --update-advisor
   continueOnError: true
   env:
-    SRCCLR_API_TOKEN: $(SRCCLR_API_TOKEN)
+    SRCCLR_API_TOKEN: da49d6c8-65e9-4928-80a4-c89c5f2c085c
