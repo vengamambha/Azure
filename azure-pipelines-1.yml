@@ -23,5 +23,3 @@ steps:
                 export SRCCLR_SCM_REF=master
                 curl -sSL https://download.sourceclear.com/ci.sh | bash -s -- scan --update-advisor
         continueOnError: true
-        env:
-          SRCCLR_API_TOKEN:eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAyMjE5LCJleHAiOjE3MDI2NDkwNDgsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiJmYzljNzlmYy1kZGMwLTRhZDgtYWZjMi1mZDY4MTMwYjg1OGQiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.pbKqAxCP_DiwZWfkV5NGRxJF85U7Wug4dr-p20_RkUsUQwuJT0TexotgW_pBvZcL8qmmU3f3Mgvgb9cVQamnRGqcyvq5AfBEniheyHChG1edl8iS1noSp-k4JCZcMz8UM5VPCif4-dfFzpuDMAEIHqDsp_-tWp9W38YpGwccQ2Y
