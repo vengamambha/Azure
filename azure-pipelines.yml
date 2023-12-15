@@ -8,18 +8,11 @@ trigger:
 pool:
   name: Default
 steps:
-
-    
-- task: Bash@3
-  displayName: 'Veracode SCA scan'
+- task: VeracodeCommunityScaAdoExtension@1
   inputs:
-     targetType: 'inline'
-     script: |
-          export SRCCLR_SCM_URI=https://github.com/ashynavad-git/SCA.git
-          export SRCCLR_API_TOKEN="f48d6d7a-bfd6-496a-92bb-ac9697fdb664"
-          export SRCCLR_SCM_REF=master
-          export SRCCLR_SCM_REV="Amit"
-          curl -sSL https://download.sourceclear.com/ci.sh | bash -s -- scan --update-advisor
-  continueOnError: true
+    scanType: 'url'
+    scanTarget: 'https://github.com/vengamambha/Azure'
+    appName: 'Azure'
+    minCVSS: '0'
   env:
-    SRCCLR_API_TOKEN: f48d6d7a-bfd6-496a-92bb-ac9697fdb664
+    SRCCLR_API_TOKEN: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDAyMjE5LCJleHAiOjE3MDI2NDkwNDgsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiJmYzljNzlmYy1kZGMwLTRhZDgtYWZjMi1mZDY4MTMwYjg1OGQiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.pbKqAxCP_DiwZWfkV5NGRxJF85U7Wug4dr-p20_RkUsUQwuJT0TexotgW_pBvZcL8qmmU3f3Mgvgb9cVQamnRGqcyvq5AfBEniheyHChG1edl8iS1noSp-k4JCZcMz8UM5VPCif4-dfFzpuDMAEIHqDsp_-tWp9W38YpGwccQ2Y
